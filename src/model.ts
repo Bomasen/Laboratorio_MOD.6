@@ -1,9 +1,10 @@
-export let puntuacion = 0;
-
 interface Partida {
-    puntuacion : number
+  puntuacion: number;
 }
 
-export const partida:Partida = {
-    puntuacion:0
-}
+export const partida: Partida = {
+  puntuacion: 0,
+};
+
+export const setPuntuacion = (nuevosPuntos: number) =>
+  (partida.puntuacion = nuevosPuntos);
